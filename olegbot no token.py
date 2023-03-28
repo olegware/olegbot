@@ -7,6 +7,7 @@ import yt_dlp as youtube_dl
 from discord import FFmpegPCMAudio
 import os
 import ytmusicapi
+import sqlite3
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -14,6 +15,42 @@ intents.reactions = True
 intents.messages = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
+
+
+# create sqlite db, initialise, create if not exist
+conn = sqlite3.connect('bot_users.db')
+c = conn.cursor()
+c.execute('''CREATE TABLE IF NOT EXISTS users (user_id INTEGER PRIMARY KEY, notify INTEGER)''')
+conn.commit()
+
+
+async def update_user_interaction(user_id):
+    c.execute("INSERT OR IGNORE INTO users (user_id, notify) VALUES (?, 1)", (user_id,))
+    conn.commit()
+
+
+async def notify_users_on_restart():
+    for row in c.execute("SELECT user_id FROM users WHERE notify = 1"):
+        user = await bot.fetch_user(row[0])
+        dm_channel = await user.create_dm()
+        await dm_channel.send("oleg (the creator of this bot) just pulled the plug on me :skull: This means your studybook has been reset and I won't remember any of our previous interactions. If you lost anything of value due to this, blame oleg not me. If you would like to stop receiving these messages, reply with 'stfu'")
+
+#DB DOESNT CLOSE            
+            
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    if message.content.lower() == "stfu":
+        c.execute("UPDATE users SET notify = 0 WHERE user_id = ?", (message.author.id,))
+        conn.commit()
+        await message.channel.send("You will no longer receive notifications.")
+    else:
+        await bot.process_commands(message)
+        if not message.content.startswith('/'):
+            await update_user_interaction(message.author.id)
+
 
 # jlpt dicts by level (only snippet of full dictionary for proof-of-concept)
 N5 = {'日本語': 'Japanese', '英語': 'English', '電車': 'train, electric train', '鉛筆': 'pencil', '服': 'clothes',
@@ -582,6 +619,13 @@ async def on_ready():
     await bot.change_presence(activity=discord.Game(name='/helpme for command list'))
     print('Bot is ready.')      
 
+
+@bot.event
+async def on_ready():
+    await notify_users_on_restart()
+    await bot.change_presence(activity=discord.Game(name='/helpme for commands'))
+    print(f'{bot.user.name} has connected to Discord!')
+      
       
 # random rock-paper-scissors game xd
 async def get_choice(user, dm_channel):
