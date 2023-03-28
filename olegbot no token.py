@@ -1,8 +1,8 @@
 import discord
 from discord.ext import commands
 import random
-import asyncio
-import re
+import asyncio #good luck figuring this shit out
+import re #saved my life
 import yt_dlp as youtube_dl
 from discord import FFmpegPCMAudio
 import os
@@ -191,8 +191,8 @@ async def play_song_in_voice_channel(ctx, url):
             info = ydl.extract_info(url, download=True)
             filename = ydl.prepare_filename(info)
 
-        # play file
-        ffmpeg_executable = "ffmpeg"  # Change this to the correct path to ffmpeg.exe on your system, if needed
+        # play file 
+        ffmpeg_executable = "ffmpeg"  
         voice_client.play(FFmpegPCMAudio(filename, executable=ffmpeg_executable))
 
         # wait audio end
@@ -237,7 +237,7 @@ async def songfromstudybook(ctx):
     await play_song_in_voice_channel(ctx, url)
 
 
-# command list here zzzzz
+# command list here zzzzz (inaccurate descriptions until i can be bothered to change)
 @bot.command()
 async def helpme(ctx):
     embed = discord.Embed(
@@ -578,8 +578,6 @@ async def learnedwords(ctx):
 
 
 # random rock-paper-scissors game xd
-
-
 async def get_choice(user, dm_channel):
     def check(m):
         return m.author == user and m.channel == dm_channel and m.content.upper() in ['R', 'P', 'S']
