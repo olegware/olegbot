@@ -15,7 +15,7 @@ intents.messages = True
 
 bot = commands.Bot(command_prefix='/', intents=intents)
 
-# jlpt dicts by level
+# jlpt dicts by level (only snippet of full dictionary for proof-of-concept)
 N5 = {'日本語': 'Japanese', '英語': 'English', '電車': 'train, electric train', '鉛筆': 'pencil', '服': 'clothes',
       '灰皿': 'ashtray', '飛行機': 'aeroplane, airplane', '痛い': 'painful, sore', '辞書': 'dictionary', 'ここ': 'here',
       '毎月': 'every month', '耳': 'ear', '皆': 'all, everyone', '奥さん': 'wife, your wife, his wife', '歳': 'years old',
