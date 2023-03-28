@@ -577,6 +577,12 @@ async def learnedwords(ctx):
         await ctx.send(learned_words_msg)
 
 
+@bot.event #displays msg as bot's current activity
+async def on_ready():
+    await bot.change_presence(activity=discord.Game(name='/helpme for command list'))
+    print('Bot is ready.')      
+
+      
 # random rock-paper-scissors game xd
 async def get_choice(user, dm_channel):
     def check(m):
