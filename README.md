@@ -1,6 +1,6 @@
 # Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study
 
-If you wish to use olegbot, contact me (<p style="color:DodgerBlue;"><b>oleg#1357</b></p>) via disc
+If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
 
 <strong>Existing commands list (Not updating regularly, likely inaccurate/outdated until main functions complete):</strong>
           
