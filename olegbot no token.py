@@ -450,6 +450,7 @@ async def settimer(ctx):
     unit = 'seconds' if duration < 60 else 'minutes' if duration < 60 * 60 else 'hours'
 
     if unit == 'hours':
+        # i lost all my dignity when i committed this method to fix wrong duration output (but hey it works)
         await ctx.send(
             f"わかった！See you in {duration / 3600} {unit}. Of course you may force a review session before then using the /review commands. \n Use the command /timerstatus at any time to check how long is "
             f"remaining or /endtimer if you made a mistake.")
