@@ -1,15 +1,14 @@
 #Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study
 
-If you wish to use olegbot, contact me (oleg#1357) via disc
+If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
 
-function for command listing existing commands and descriptions (Not updating regularly, likely inaccurate outdated until main functions complete):
+Existing commands list (Not updating regularly, likely inaccurate/outdated until main functions complete):
           
-   - "/newn5, /newn4, /newn3, /newn2, /newn1 - Sends a word in Japanese from levels N5-N1 respectively, "
-   - "with a link to jisho.org\n\n "
+   - "/newn5, /newn4, /newn3, /newn2, /newn1 - Sends a word in Japanese from levels N5-N1 respectively, with a link to jisho.org"
    - "/mystudybook - Displays all words added to the user's studybook"
    - "/settimer - Sets a timer for initiating a review session"
    - "/timerstatus - Displays the remaining time on the timer"
-   - "/endtimer - Ends the currently running timer\n\n"
+   - "/endtimer - Ends the currently running timer"
    - "/review 5, /review 4, /review 3, /review 2, /review 1 - Initiates a review session of the words in your studybook for levels N5-N1 respective"
    - "/wipe - Wipes the user's studybook"
    - "/masteredwords - Displays the user's mastered words"
