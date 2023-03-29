@@ -1,4 +1,4 @@
-# Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study
+# Olegbot - language study discord bot
 
 If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
 
