@@ -495,9 +495,6 @@ def check_response(m, ctx):
     return m.author == ctx.author and m.channel == ctx.channel
 
 
-JLPT = {5: N5, 4: N4, 3: N3, 2: N2, 1: N1}
-
-
 def get_word_level(word):
     for level in JLPT:
         if word in JLPT[level]:
