@@ -1,8 +1,8 @@
-#Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study
+# Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study
 
 If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
 
-Existing commands list (Not updating regularly, likely inaccurate/outdated until main functions complete):
+<strong>Existing commands list (Not updating regularly, likely inaccurate/outdated until main functions complete):</strong>
           
    - "/newn5, /newn4, /newn3, /newn2, /newn1 - Sends a word in Japanese from levels N5-N1 respectively, with a link to jisho.org"
    - "/mystudybook - Displays all words added to the user's studybook"
@@ -17,7 +17,7 @@ Existing commands list (Not updating regularly, likely inaccurate/outdated until
    - "/songfromstudybook - Sends a random JP song with random word from your studybook in the title"
    - "/rps @user - initiates a game of rock-paper-scissors with mentioned user"
 
-Currently planned commands and functions:
+<strong>Currently planned commands and functions:</strong>
 
    - /createkanjibook
     {create user's dict. to store kanji characters}
@@ -28,5 +28,5 @@ Currently planned commands and functions:
    - /checkstrokeorder
     {allows user to search stroke order for specified kanji or randomkanji in: (dict.)}
     
-If you have any suggestions for useful commands, kindly contact me and let me know   
+<strong>If you have any suggestions for useful commands, kindly contact me and let me know</strong>   
     
