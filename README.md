@@ -1,8 +1,8 @@
-Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study.
+Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study
 
-If you wish to use olegbot, contact me (oleg#1357) via disc.
+If you wish to use olegbot, contact me (oleg#1357) via disc
 
-In olegbotnobottoken.py read the code for /helpme function for an outline of current functions. 
+In olegbot no token.py read the code for /helpme function for an outline of current functions 
 
 Currently planned commands and functions:
 
@@ -15,5 +15,5 @@ Currently planned commands and functions:
    - /checkstrokeorder
     {allows user to search stroke order for specified kanji or randomkanji in: (dict.)}
     
-if you have any suggestions for useful commands, kindly contact me and let me know.     
+If you have any suggestions for useful commands, kindly contact me and let me know   
     
