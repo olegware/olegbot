@@ -387,7 +387,7 @@ timer_tasks = {}
 
 
 async def timer_callback(ctx, user_id, duration, time_unit):
-    await asyncio.sleep(duration)
+    await asyncio.sleep(duration)   # remember to convert unit from seconds, or below message will show minutes*60 and hours*3600
     await ctx.send(
         f"<@!{user_id}>, {duration} {time_unit} have surpassed. Time for your review session! Reply with /check and "
         f"let's see how well you remember your vocab.")
@@ -402,12 +402,6 @@ class TimerTask(asyncio.Task):
     def time_remaining(self):
         elapsed_time = (asyncio.get_event_loop().time() - self.start_time)
         return max(0, self.duration - elapsed_time)
-
-
-async def timer_callback(ctx, user_id, duration, unit):
-    await asyncio.sleep(duration)
-    await ctx.send(f"{ctx.author.mention}, time's up! Your {duration} {unit} timer has ended.")
-    timer_tasks.pop(user_id, None)
 
 
 def parse_duration(duration_str):
