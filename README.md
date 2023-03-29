@@ -4,9 +4,9 @@ If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
 
 <strong>Existing commands list (Not updating regularly, likely inaccurate/outdated until main functions complete):</strong>
           
-   - "/newn5, /newn4, /newn3, /newn2, /newn1 - Sends a word in Japanese from levels N5-N1 respectively, with a link to jisho.org"
+   - "/newn5, /newn4, /newn3, /newn2, /newn1 - Sends a word in Japanese from levels N5-N1 respectively, with a link to jisho.org, allows user to either add that word to       their studybook, or discard it."
    - "/mystudybook - Displays all words added to the user's studybook"
-   - "/settimer - Sets a timer for initiating a review session"
+   - "/settimer - Sets a timer for initiating a review session" - (returns wrong duration on timer end message, but this doesn't affect functionality so fixing is not a priority.
    - "/timerstatus - Displays the remaining time on the timer"
    - "/endtimer - Ends the currently running timer"
    - "/review 5, /review 4, /review 3, /review 2, /review 1 - Initiates a review session of the words in your studybook for levels N5-N1 respective"
