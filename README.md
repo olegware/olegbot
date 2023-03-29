@@ -1,8 +1,8 @@
-olegbot is a discord bot written in py which I hope to turn into a useful tool for language study.
+Olegbot is a discord bot written in py which I hope to turn into a useful tool for language study.
 
-if you wish to use olegbot, contact me (oleg#1357) via disc.
+If you wish to use olegbot, contact me (oleg#1357) via disc.
 
-in olegbot123.py read the code for /helpme function for an outline of current functions. 
+In olegbotnobottoken.py read the code for /helpme function for an outline of current functions. 
 
 Currently planned commands and functions:
 
