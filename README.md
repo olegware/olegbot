@@ -1,4 +1,4 @@
-# Olegbot - language study discord bot
+# olegbot - language study discord bot
 
 If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
 
