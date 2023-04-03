@@ -13,7 +13,7 @@ If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
    - "/wipe - Wipes the user's studybook"
    - "/masteredwords - Displays the user's mastered words"
    - "/learnedwords - Displays the words the user has correctly reviewed"
-   - "/songn5, /songn4, /songn3, /songn2, /songn1 - Sends a random JP song with random word from specified level in title"
+   - "/songn5, /songn4, /songn3, /songn2, /songn1 - Sends a random JP song with random word from specified level in title" - <strong>Currently not funcitonal</strong>
    - "/songfromstudybook - Sends a random JP song with random word from your studybook in the title. If user in voice channel, bot joins and plays song"
    - "/rps @user - initiates a game of rock-paper-scissors with mentioned user"
 
