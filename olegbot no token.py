@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import random
-import asyncio #good luck figuring this shit out
+import asyncio 
 import re #saved my life
 import yt_dlp as youtube_dl
 from discord import FFmpegPCMAudio
