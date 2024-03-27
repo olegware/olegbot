@@ -1,6 +1,6 @@
 # olegbot - language study discord bot
 
-If you wish to use olegbot, contact me (<b>oleg#1357</b>) via disc
+If you wish to use olegbot, contact me (<b>olegcqwz</b>) via disc
 
 <strong>Existing commands list (Not updating regularly, likely inaccurate/outdated until main functions complete):</strong>
           
